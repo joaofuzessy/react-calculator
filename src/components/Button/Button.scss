@@ -4,11 +4,32 @@
 }
 
 
-.button{
+button{
     font-size: 1.4em;
     background-color: var(--bg-button);
     border: none;
     border-right: var(--border-button);
     border-bottom: var(--border-button);
     outline: none;
+
+    &.double{
+        grid-column: span 2;
+    }
+
+    &.triple{
+        grid-column: span 3;
+    }
+
+    &.operation{
+        background-color: #fa8231;
+        color: #fff;
+
+        &:active{
+            background-color: #fa8231cc;
+        }
+    }
+
+    &:active{
+        background-color: #ccc;
+    }
 }
